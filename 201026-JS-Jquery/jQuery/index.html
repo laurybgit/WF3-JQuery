@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- il faut que la bibliotheque jQuery soit disponible dès le chargement de la page, donc au début !-->
+
+    <!-- version CDN google : léger avantage en terme de performances, si l'utilisateur a déjà visité un autre
+        site untilisant CE CDN, il n'aura pas à re-télécharger la bibliotheque Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- version locale : avantage fonctionne sans internet (utile en dev), mais oblige la personne à 
+        télécharger vos fichiers -->
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+    <style>
+        p~p{ /* sélecteur d'adjacence "indirect" */
+            color: red;
+        }
+        .blue {
+            color:blue;
+        }
+        /* h1:hover {
+          cursor: pointer;  
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="titre1">titre de niveau1</h1>
+    <figure>
+        <img src="chat200.jpg" alt="placeholder img">
+        <img src="chat200.jpg" alt="placeholder img">
+        <img src="chat200.jpg" alt="placeholder img">
+    </figure>
+    <p>Lorem, ipsum dolor sit amet consectetur <a href="#">adipisicing elit</a>. Sequi doloribus ipsum hic, animi voluptas voluptatibus voluptatem id soluta eveniet aliquid?</p>
+    <blockquote>
+        <p id="lastp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Praesentium</a> nobis provident aperiam nesciunt impedit facilis inventore magnam, eveniet numquam odit.</p>
+    </blockquote>
+    <p><a href="https://www.google.fr" id="stop">tout arrêter</a></p>
+    <!-- div>article.test>p*2>lorem30^^p>lorem20^h1{titre}+p>lorem15 -->
+    <div>
+        <article class="test autreClasse humHum">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nesciunt tenetur libero assumenda, consequuntur omnis odio eos ducimus et nihil optio sapiente? Molestiae perspiciatis voluptas iste dicta maxime? Quo, placeat?</p>
+            <p>Fuga exercitationem officia, id impedit nam, molestias, quidem dolorem accusamus ea odit temporibus laborum! Aliquam accusamus rem hic officia, soluta odit quam doloremque tempore, ad odio dolorem quaerat, expedita iusto.</p>
+        </article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis esse accusantium velit sapiente rerum perferendis aspernatur et. Autem, tempora vero.</p>
+        <h1>titre</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, adipisci corrupti a dolore porro sit!</p>
+    </div>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
